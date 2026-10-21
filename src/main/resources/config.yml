@@ -1,0 +1,5 @@
+messages:
+  no_permission: "&cVous n'avez pas la permission d'utiliser cette commande."
+  incorrect_usage: "&cUtilisation correcte: /shstaffalert <message>"
+settings:
+  log_to_console: true # Activer/désactiver l'envoi du message dans la console
