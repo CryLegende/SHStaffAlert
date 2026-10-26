@@ -38,12 +38,12 @@ public class SHStaffAlert extends JavaPlugin {
             }
 
             if (!sender.hasPermission("shstaffalert.command")) {
-                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', config.getString("messages.no_permission")));
+                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', config.getString("messages.no_permission", "&cVous n'avez pas la permission d'utiliser cette commande.")));
                 return true;
             }
 
             if (args.length == 0) {
-                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', config.getString("messages.incorrect_usage")));
+                sender.sendMessage(ChatColor.translateAlternateColorCodes('&', config.getString("messages.incorrect_usage", "&cUtilisation correcte: /shstaffalert <message>")));
                 return true;
             }
 
