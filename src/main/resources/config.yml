@@ -1,5 +1,20 @@
-messages:
-  no_permission: "&cVous n'avez pas la permission d'utiliser cette commande."
-  incorrect_usage: "&cUtilisation correcte: /shstaffalert <message>"
+# SHStaffAlert : envoie un message à tous les staffs connectés.
+#
+# Commande :
+#   /shstaffalert <message>     Envoie le message (codes couleur &) à tous les joueurs qui ont shstaffalert.staff.
+#
+# Permissions :
+#   shstaffalert.command        Utiliser /shstaffalert (op par défaut ; la console l'utilise toujours).
+#   shstaffalert.staff          Recevoir les messages (personne par défaut, à donner au staff).
+#
+# Les messages de la commande sont dans messages.yml.
+
 settings:
-  log_to_console: true # Activer/désactiver l'envoi du message dans la console
+  # Écrit aussi chaque alerte dans la console du serveur
+  log_to_console: true
+
+# Avec SHNetwork, l'alerte atteint le staff de tous les serveurs du réseau (et la console de chacun si
+# log_to_console est actif). Sans SHNetwork, ou à false, seuls les staffs de ce serveur la reçoivent.
+# Se lit au démarrage.
+reseau:
+  actif: true

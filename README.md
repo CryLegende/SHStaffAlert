@@ -18,6 +18,8 @@
 
 Utilisé sur : **Opale**.
 
+Avec **SHNetwork** (facultatif), l'alerte atteint le staff de tous les serveurs du réseau. Sans SHNetwork, ou avec `reseau.actif: false`, seuls les staffs du serveur la reçoivent.
+
 ## Commandes
 
 | Commande | Alias | Description | Permission |
@@ -37,8 +39,11 @@ Fichiers par défaut repris du serveur (secrets remplacés par `CHANGE_ME`). Cli
 
 <pre>
 plugins/SHStaffAlert/
-└── <a href="src/main/resources/config.yml">config.yml</a>
+├── <a href="src/main/resources/config.yml">config.yml</a>
+└── <a href="src/main/resources/messages.yml">messages.yml</a>
 </pre>
+
+La clé `reseau.actif` (par défaut `true`) active l'envoi vers les autres serveurs quand SHNetwork est présent. Elle se lit au démarrage.
 
 ## Compilation
 

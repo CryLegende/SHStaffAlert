@@ -86,5 +86,12 @@
             <version>26.3.build.209-stable</version>
             <scope>provided</scope>
         </dependency>
+        <!-- Facultatif a l'execution (softdepend) : sans lui, seuls les staffs du serveur recoivent l'alerte -->
+        <dependency>
+            <groupId>org.Cry_Legende</groupId>
+            <artifactId>SHNetwork</artifactId>
+            <version>1.0</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 </project>

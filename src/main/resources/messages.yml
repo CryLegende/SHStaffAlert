@@ -1,0 +1,7 @@
+# Messages de SHStaffAlert. Codes couleur avec &.
+
+# /shstaffalert sans la permission shstaffalert.command
+no-permission: "&cVous n'avez pas la permission d'utiliser cette commande."
+
+# /shstaffalert sans message
+incorrect-usage: "&cUtilisation correcte: /shstaffalert <message>"
