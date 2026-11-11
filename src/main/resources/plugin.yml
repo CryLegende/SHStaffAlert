@@ -7,15 +7,26 @@ author: Cry_Legende
 softdepend: [SHNetwork]
 
 commands:
-  shstaffalert:
+  staffalert:
     description: Envoie un message à tous les staffs connectés.
-    usage: /shstaffalert <message>
-    permission: shstaffalert.command
+    usage: /<command> <message>
+    permission: shstaffalert.use
+  shstaffalert:
+    description: Administration de SHStaffAlert. Avec un message, envoie l'alerte comme /staffalert.
+    usage: /<command> reload | /<command> <message>
 
 permissions:
-  shstaffalert.command:
-    description: Permet d'utiliser la commande /shstaffalert
+  shstaffalert.use:
+    description: Envoyer une alerte avec /staffalert (ou /shstaffalert <message>).
     default: op
   shstaffalert.staff:
-    description: Reçoit les messages envoyés via /shstaffalert
+    description: Reçoit les messages envoyés via /staffalert
     default: false
+  shstaffalert.admin:
+    description: Toutes les sous-commandes de /shstaffalert.
+    default: op
+    children:
+      shstaffalert.admin.reload: true
+  shstaffalert.admin.reload:
+    description: /shstaffalert reload, recharge config.yml et messages.yml.
+    default: op

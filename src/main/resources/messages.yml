@@ -1,7 +1,16 @@
-# Messages de SHStaffAlert. Codes couleur avec &.
+# Messages de SHStaffAlert, codes couleur &. Un message vide ("") n'est pas envoyé.
+#
+# Placeholders :
+#   {commands}   commandes que l'expéditeur peut utiliser (usage)
+#   {file}       fichier illisible (reload-failed)
+#   {error}      erreur de lecture du fichier (reload-failed)
 
-# /shstaffalert sans la permission shstaffalert.command
+# Commande sans la permission shstaffalert.use
 no-permission: "&cVous n'avez pas la permission d'utiliser cette commande."
 
-# /shstaffalert sans message
-incorrect-usage: "&cUtilisation correcte: /shstaffalert <message>"
+# Commande sans message
+usage: "&7&l« &e&lSH &8&l» &7Utilisation : &e{commands}&7."
+
+# /shstaffalert reload
+reloaded: "&7&l« &a&lSH &8&l» &7Configuration &arechargée&7. La clé &ereseau.actif &7de config.yml demande un redémarrage."
+reload-failed: "&7&l« &c&lSH &8&l» &7Rechargement &cimpossible&7, &c{file} &7illisible : &c{error}&7. L'ancienne configuration reste active."

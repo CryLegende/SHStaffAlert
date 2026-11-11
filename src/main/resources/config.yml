@@ -1,13 +1,19 @@
 # SHStaffAlert : envoie un message à tous les staffs connectés.
 #
-# Commande :
-#   /shstaffalert <message>     Envoie le message (codes couleur &) à tous les joueurs qui ont shstaffalert.staff.
+# Commandes :
+#   /staffalert <message>       Envoie le message (codes couleur &) à tous les joueurs qui ont shstaffalert.staff.
+#   /shstaffalert <message>     Ancienne forme, identique à /staffalert (appelée en console par d'autres plugins).
+#   /shstaffalert reload        Recharge config.yml et messages.yml ; si un fichier est illisible, l'ancienne
+#                               configuration reste active. Doit être le seul argument. La clé reseau.actif demande
+#                               un redémarrage.
 #
 # Permissions :
-#   shstaffalert.command        Utiliser /shstaffalert (op par défaut ; la console l'utilise toujours).
+#   shstaffalert.use            Envoyer une alerte (op par défaut ; la console l'utilise toujours).
 #   shstaffalert.staff          Recevoir les messages (personne par défaut, à donner au staff).
+#   shstaffalert.admin          Toutes les sous-commandes de /shstaffalert (op par défaut).
+#   shstaffalert.admin.reload   /shstaffalert reload (op par défaut).
 #
-# Les messages de la commande sont dans messages.yml.
+# Les textes sont dans messages.yml.
 
 settings:
   # Écrit aussi chaque alerte dans la console du serveur
