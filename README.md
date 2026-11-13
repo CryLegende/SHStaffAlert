@@ -40,7 +40,7 @@ Avec **SHNetwork** (facultatif), l'alerte atteint le staff de tous les serveurs 
 
 ## Configuration
 
-Fichiers par défaut repris du serveur (secrets remplacés par `CHANGE_ME`). Cliquez sur un fichier pour l'ouvrir :
+Fichiers par défaut, avec des valeurs d'exemple. Cliquez sur un fichier pour l'ouvrir :
 
 <pre>
 plugins/SHStaffAlert/
