@@ -46,12 +46,10 @@ public class SHStaffAlert extends JavaPlugin {
         this.getCommand("staffalert").setExecutor(executor);
         this.getCommand("shstaffalert").setExecutor(executor);
         this.getCommand("shstaffalert").setTabCompleter(executor);
-        getLogger().info("SHStaffAlert est activé !");
     }
 
     @Override
     public void onDisable() {
-        getLogger().info("SHStaffAlert est désactivé !");
     }
 
     /**
